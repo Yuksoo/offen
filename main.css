@@ -24,6 +24,126 @@ body, html {
     user-select: none;
 }
 
+
+/* Navbar */
+ .navbar {
+            display: flex;
+            padding: 20px 70px 10px;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--w2);
+            position: fixed;
+            width: 100%;
+            box-sizing: border-box;
+            height: min-content;
+            top: 0px;
+        }
+
+        .navbar div ul, .navbar div {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            padding: 0px;
+        }
+
+        .navbar .left .logo img {
+            width: 40px;
+        }
+
+        .navbar div ul li {
+            padding: 0px 20px;
+        }
+
+        .navbar div ul li  a {
+            color: var(--g);
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .navbar .links {
+            margin-left: 30px;
+        }
+
+
+
+/* Footer */
+     .footer {
+            display: flex;
+            padding: 10px 100px 20px;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--w2);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+
+        .footer .links {
+            cursor: pointer;
+        }
+       
+        .footer .links a {
+            padding: 0px 10px;
+            color: var(--g);
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .footer .copy {
+            color: var(--g);
+            font-size: 17px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+/* Arrow */
+ .arrow {
+            position: fixed;
+            left: 50%;
+            bottom: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .arrow img {
+            width: 30px;
+        }
+
+
+/* Main */
+        .main div.sc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main div.sc .t {
+            width: 600px;
+            color: var(--g);
+        }
+        .main div.sc .t h1 {
+            font-weight: 900;;
+        }
+        .main {
+            width: 95%;
+            box-sizing: border-box;
+            height: 80%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: auto;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+            padding-right: 10px;
+        }
+        .main .sc {
+            width: 100%;
+            box-sizing: border-box;
+            height: 100%;
+            scroll-snap-align: start;
+              }
+
 ::-webkit-scrollbar { 
     width: 7px;
     height: 7px;
