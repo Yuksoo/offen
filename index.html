@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offen</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="offen-icone.png">
+    <!-- Boxicons for all the icons on the site -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+
+
+    <!-- Navbar at top -->
+    <nav class="navbar">
+        <!-- Two parts : logo and links at left and buttons at right -->
+        <div class="left">
+            <div class="logo">
+                <img src="./offen.png" alt="Offen">
+            </div>
+
+            <ul class="links">
+                <li class="link">
+                    <a href="#">Home</a>
+                </li>
+                <li class="link">
+                    <a href="#">Features</a>
+                </li>
+                <li class="link">
+                    <a href="#">Partners</a>
+                </li>
+                <li class="link">
+                    <a href="#">Pricing</a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="right">
+            <ul class="buttons">
+                <li class="a">
+                    <a href="#">Log In</a>
+                </li>
+                <li class="b">
+                    <a href="#">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Main content -->
+    <div class="main">
+
+
+        <div class="sc one">
+            <div class="t">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint suscipit eaque harum perferendis hic cupiditate est, sapiente deserunt assumenda quae sequi aut itaque autem maxime consequuntur iste nisi maiores placeat!
+                </h4>
+            </div>
+        </div>
+
+
+        <div class="sc two">
+            <div class="t">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint suscipit eaque harum perferendis hic cupiditate est, sapiente deserunt assumenda quae sequi aut itaque autem maxime consequuntur iste nisi maiores placeat!
+                </h4>
+            </div>
+        </div>
+
+
+        <div class="sc three">
+            <div class="t">
+                <h1>Lorem ipsum dolor sit amet</h1>
+                <h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint suscipit eaque harum perferendis hic cupiditate est, sapiente deserunt assumenda quae sequi aut itaque autem maxime consequuntur iste nisi maiores placeat!
+                </h4>
+            </div>
+        </div>
+
+
+    </div>
+
+    <style>
+        .main div.sc {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .main div.sc .t {
+            width: 600px;
+            color: var(--g);
+        }
+        .main div.sc .t h1 {
+            font-weight: 900;;
+        }
+        .main {
+            width: 95%;
+            box-sizing: border-box;
+            height: 80%;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            overflow: auto;
+            scroll-snap-type: y mandatory;
+            scroll-behavior: smooth;
+            padding-right: 10px;
+        }
+        .main .sc {
+            width: 100%;
+            box-sizing: border-box;
+            height: 100%;
+            scroll-snap-align: start;
+              }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer ( sticky ) -->
+    <footer class="footer">
+        <!-- Two Parts : Copyright and links -->
+        <div class="copy">
+            <span>
+           2022 
+        </span>
+        </div>
+
+        <div class="links">
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-youtube' ></i></a>
+            <a href="#"><i class='bx bxl-discord-alt' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+        </div>
+            <!-- Arrow for swipe -->
+    <div class="arrow">
+        <img src="./arrow.png">
+    </div>
+
+    <style>
+        .arrow {
+            position: fixed;
+            left: 50%;
+            bottom: 30px;
+            cursor: pointer;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+        .arrow img {
+            width: 30px;
+        }
+    </style>
+
+    </footer>
+
+    <style>
+        .footer {
+            display: flex;
+            padding: 10px 100px 20px;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--w2);
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-sizing: border-box;
+        }
+
+        .footer .links {
+            cursor: pointer;
+        }
+       
+        .footer .links a {
+            padding: 0px 10px;
+            color: var(--g);
+            font-size: 24px;
+            text-decoration: none;
+        }
+        .footer .copy {
+            color: var(--g);
+            font-size: 17px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .navbar {
+            display: flex;
+            padding: 20px 70px 10px;
+            justify-content: space-between;
+            align-items: center;
+            background: var(--w2);
+            position: fixed;
+            width: 100%;
+            box-sizing: border-box;
+            height: min-content;
+            top: 0px;
+        }
+
+        .navbar div ul, .navbar div {
+            display: flex;
+            align-items: center;
+            list-style: none;
+            padding: 0px;
+        }
+
+        .navbar .left .logo img {
+            width: 40px;
+        }
+
+        .navbar div ul li {
+            padding: 0px 20px;
+        }
+
+        .navbar div ul li  a {
+            color: var(--g);
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .navbar .links {
+            margin-left: 30px;
+        }
+    </style>
+
+
+    
+</body>
+</html>
